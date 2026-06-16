@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortsForge — Portfolio Video Scraper & Downloader</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Drift Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-accent">⚡</span> ShortsForge
+            </div>
+            <div class="tagline">Discover · Download · Repeat</div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-box">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text"
+                           id="query"
+                           placeholder="Search stoicism clips..."
+                           value="Stoicism">
+                </div>
+                <select id="count" class="count-select">
+                    <option value="5" selected>5 Results</option>
+                    <option value="10">10 Results</option>
+                    <option value="20">20 Results</option>
+                </select>
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+
+            <!-- Quick Filter Chips -->
+            <div class="filter-chips">
+                <button class="chip active" data-query="Stoicism">🧠 Stoicism</button>
+                <button class="chip" data-query="Gaming highlights">🎮 Gaming</button>
+                <button class="chip" data-query="Ufotable anime cuts">⛩️ Anime</button>
+                <button class="chip" data-query="Psychology facts">💡 Psychology</button>
+            </div>
+        </section>
+
+        <!-- Status Dashboard -->
+        <div class="dashboard-bar">
+            <p id="status" class="status-text">Ready to search</p>
+            <div class="quota-counter">Quota Limit: 250/mo (Caching Active)</div>
+        </div>
+
+        <!-- Layout Grid for Content & Sidebar -->
+        <div class="app-layout">
+            <!-- Main Video Grid -->
+            <section class="grid-section">
+                <div id="results" class="grid">
+                    <!-- Cards waterfall inside here -->
+                </div>
+            </section>
+
+            <!-- Downloaded Files Sidebar -->
+            <aside class="downloads-sidebar">
+                <div class="sidebar-header">
+                    <h3>📂 Downloaded Library</h3>
+                    <button id="refreshDownloadsBtn" class="icon-btn" title="Refresh list">🔄</button>
+                </div>
+                <ul id="downloadsList" class="downloads-list">
+                    <li class="empty-state">No downloads yet. Get clipping!</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Toast Notifications Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="mockData.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
