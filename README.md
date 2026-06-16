@@ -91,3 +91,12 @@ The server will boot up at `http://localhost:3000`.
 - [index.js](file:///C:/AI%20Native%20founder/Projects/ShortsForge/index.js) — Express router, SSE streams, caching modules, and shell command runners.
 - [package.json](file:///C:/AI%20Native%20founder/Projects/ShortsForge/package.json) — Backend dependencies list.
 - `downloads/` — Target directory for downloaded media streams (ignored in Git).
+
+---
+
+## 💖 Acknowledgements & Credits
+
+This project was created with the help of the **freeCodeCamp** video tutorial: [Build a Web Scraper/Downloader in Python & Node.js](https://youtu.be/j6hnjNhx_MM?si=d98i_mA0F6IP8EFM).
+
+I am incredibly grateful for freeCodeCamp's constant efforts in providing high-quality, free programming education to developers around the world.
+
