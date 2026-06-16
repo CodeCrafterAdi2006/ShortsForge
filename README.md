@@ -1,5 +1,7 @@
 # ⚡ ShortsForge
 
+![ShortsForge Preview](assets/preview.png)
+
 ShortsForge is a premium, high-performance web application designed to help creators search, discover, and download short-form video content (YouTube Shorts, TikToks, and gaming clips) in one streamlined workspace. 
 
 Featuring a modern glassmorphic interface, real-time download streaming via Server-Sent Events (SSE), and intelligent caching layer, ShortsForge provides a state-of-the-art UI/UX for creators who curate video libraries.
